@@ -1,2 +1,5 @@
 **/.DS_Store
 SOLUCION/
+**/.jupyter
+**/.ipynb_checkpoints
+**/__pycache__
