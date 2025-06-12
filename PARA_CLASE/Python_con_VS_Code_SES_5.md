@@ -48,7 +48,28 @@ La gestión de los entornos virtuales de Python se puede realizar desde la termi
 
 A modo de ejemplo vamos a crear un nuevo directorio llamado "pruebas_python" y crearemos un entorno virtual en el que se materializará en un directorio ".venv"
 
-__Ejemplo inicial de archivo Python__
+__Ejecución del módulo principal__
+
+La sentencia `if __name__ == '__main__':` en Python se utiliza para definir qué código se ejecutará cuando un archivo se ejecuta directamente como un programa principal, en lugar de ser importado como un módulo. 
+
+Facilita la reutilización de código en otros programas al evitar que se ejecuten partes no deseadas al importar el archivo. Y no utilizar variables globales, que no es una buena práctica.
+
+_¿Cómo funciona?:_
+
+`__name__` es una variable especial en Python que indica cómo se está ejecutando el archivo. `"__main__"` es el valor de `__name__` cuando el archivo se ejecuta directamente como el programa principal. Si el módulo fuera importado desde otro archivo la variable `__name__` contendría el nombre del módulo.
+
+_Ejemplo:_
+
+```python
+
+def saludar():
+    print("Hola, mundo!")
+
+if __name__ == '__main__':
+    saludar()
+````
+
+__Ejemplo de módulo Python__
 
 Vamos a crear un primer archivo de pruebas para ver las capacidades de VS Code como entorno de desarrollo en Python. LLamaremos al archivo "pruebas.py" y copiamos en el el siguiente código:
 
@@ -57,21 +78,24 @@ Vamos a crear un primer archivo de pruebas para ver las capacidades de VS Code c
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Ejemplo de gráfica
-x = np.array([1, 2.5, 5, 10])
-y = np.random.rand(4)
-plt.figure()
-plt.plot(x,y, label='y (x)')
+def grafica():
+    # Ejemplo de gráfica
+    x = np.array([1, 2.5, 5, 10])
+    y = np.random.rand(4)
+    plt.figure()
+    plt.plot(x,y, label='y (x)')
 
-plt.legend()
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Figura de ejemplo')
-plt.xlim([0, 11])
-plt.ylim([0, 1])
-plt.grid()
-plt.show()
+    plt.legend()
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Figura de ejemplo')
+    plt.xlim([0, 11])
+    plt.ylim([0, 1])
+    plt.grid()
+    plt.show()
 
+if __name__ == '__main__':
+    grafica()
 ```
 
 Para que este código funciones debemos instalar los paquetes numpy y matplotlib, que instalaremos unicamente en nuestro entorno virtual.
