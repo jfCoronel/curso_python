@@ -44,4 +44,8 @@ La aplicación debe cargar un dataframe con los datos del archivo "sevilla_met.c
 
 Añadir tambíen una gráfica con líneas que muestre una variable previamente seleccionada para el día elegido.
 
+__Ejercicio propuesto:__
+
+Hacer un aplicación web que cargando los datos del archivo Andalucia.xlsx en un DataFrame muestre la población, área y número de municipios totales de Andalucía y una gráfica de cada una de las variables anteriores seleccionadas previamente.
+
 
