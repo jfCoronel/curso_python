@@ -23,16 +23,16 @@ python --version
 Para Macos usamos "python3" en lugar de "python"
 
 Para mostrar la lista de paquetes externos instalados escribimos:
-````
+
+```
 pip list
-````
+```
 
 __Instalación de VS Code__
 
 Para instalar VS Code lo descargamos e instalamos desde su página web:
 
 https://code.visualstudio.com/
-
 
 __Configuración de VS Code para Python__
 
@@ -61,20 +61,18 @@ _¿Cómo funciona?:_
 _Ejemplo:_
 
 ```python
-
 def saludar():
     print("Hola, mundo!")
 
 if __name__ == '__main__':
     saludar()
-````
+```
 
 __Ejemplo de módulo Python__
 
 Vamos a crear un primer archivo de pruebas para ver las capacidades de VS Code como entorno de desarrollo en Python. LLamaremos al archivo "pruebas.py" y copiamos en el el siguiente código:
 
 ```python
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -101,6 +99,3 @@ if __name__ == '__main__':
 Para que este código funciones debemos instalar los paquetes numpy y matplotlib, que instalaremos unicamente en nuestro entorno virtual.
 
 Ahora ya podemos ejecutar o depurar (debug) el archivo de python con VS Code.
-
-
-
