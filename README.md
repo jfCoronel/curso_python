@@ -1,9 +1,8 @@
-# Curso Python para Ingenieros
+# Curso de Introducción a PYTHON para Ingenieros
+__La herramienta definitiva con ayuda de la IA.__
 
-**Introducción al cálculo numérico para ingenieros con Python y Jupyter.** 
-Una alternativa a Excel y Matlab
+_© Juan F. Coronel Toro, 2026_
 
-_(c) Juan F. Coronel Toro, 2025_
+Vínculos a las cuadernos de Google Colab vacios:
 
-
-
+[01. Lenguaje Python](https://drive.google.com/file/d/1c0Da9jDYprX1eeKx466IYsnPc39fxHw2/view?usp=sharing)
