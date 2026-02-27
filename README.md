@@ -3,6 +3,4 @@ __La herramienta definitiva con ayuda de la IA.__
 
 _© Juan F. Coronel Toro, 2026_
 
-Vínculos a las cuadernos de Google Colab vacios:
-
-[01. Lenguaje Python](https://drive.google.com/file/d/1c0Da9jDYprX1eeKx466IYsnPc39fxHw2/view?usp=sharing)
+La documentación que usaremos en las clases se encuentra en al carpeta "PARA_CLASE".
