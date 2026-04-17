@@ -169,3 +169,25 @@ uv add numpy, matplotlib
 ```
 
 Ahora ya podemos ejecutar o depurar (debug) el archivo de python con VS Code.
+
+__Depuración (debug)__
+
+La depuración o debug de código es el proceso sistemático de identificar, localizar y corregir errores ("bugs"), fallos o comportamientos inesperados en un programa de software. Implica analizar el flujo de ejecución, paso a paso, para entender por qué ocurre un problema y solucionarlo, garantizando que el código funcione correctamente.
+
+Para realizar la depuración se utilizaan herramientas llamadas "debugger" que son capaces de parar la ejecución del código en un punto concreto "break" y mostrar los valores de todas las variables del programa.
+
+VS Code incluye el debugger de Python, pero para poder ejecutarlo es necesario correr siempre desde archivos "py" no es posible hacerlo desde notebooks (colab o jupyter).
+
+__Cuadernos jupyter en VS Code__
+
+Para usar cuadernos Jupyter en VS Code, lo primero es instalar la extensión "Jupyter" de Microsoft (realmente son 5 extensiones combinadas).
+
+Posteriormente para poder ejecutar jupyter es necesario instalar el paquete "ipykernel" en el directorio donde queramos crear nuestros cuadernos.
+
+```
+uv add ipykernel
+```
+
+Finalmente crearemos nuestros cuadernos que son archivos con extensión "ipynb". Podemos hacerlo desde la paleta de comandos de VSCode escribiendo ">create new jupyter".
+
+Si al intentar ejecutar el cuaderno no detecta que queremos el entorno virtual de nuestro directorio ".venv", cerrar y arrancar de nuevo VS Code.
