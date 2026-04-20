@@ -1,6 +1,6 @@
 # /// script
 # dependencies = [
-#     "marimo",
+#     "marimo>=0.23.1",
 #     "pandas==3.0.2",
 #     "plotly==6.7.0",
 # ]
